@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(void)
+{
+	int a[5],temp,k,i,j,n;
+	printf("size");
+	scanf("%d",&k);
+	printf("number of rotation");
+	scanf("%d",&n);
+	for(i=0;i<k;i++)
+	{
+		printf("value");
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;i++)
+	{
+		 temp=a[0];
+		for(j=0;j<k;j++)
+		{
+		  a[j]=a[j+1];
+		}
+		a[k-1]=temp;
+	}
+	for(i=0;i<k;i++)
+	{
+		printf("%d ",a[i]);
+	}
+}
