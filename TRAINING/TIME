@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main(void)
+{
+	int h1,m1,h2,m2,a,b,c,i,j;
+	scanf("%d:%d",&h1,&m1);
+	scanf("%d:%d",&h2,&m2);
+	h1=h1*60;
+	h2=h2*60;
+	a=h1+m1;
+	b=h2+m2;
+	if(a>b)
+	{
+		c=a-b;
+	}
+	else
+	{
+		c=b-a;
+	}
+	printf("min=%d\n",c);
+	i=c/60;
+	j=c%60;
+	printf("TIME=%d:%d",i,j);
+}
