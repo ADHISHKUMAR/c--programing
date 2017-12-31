@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<string.h>
+int main(void)
+{
+	char a[10];
+	int l,i,j,b[5],c;
+	scanf("%s",a);
+	l=strlen(a);
+	for(i=0;i<l;i++)
+	{
+		c=1;
+		if((a[i]>=65&&a[i]<=96)||(a[i]>=97&&a[i]<=122))
+		{
+		for(j=i+1;j<l;j++)
+		 {
+			if(a[i]==a[j])
+			{
+				c++;
+				if(c>1)
+				{
+					a[j]='*';
+				}
+			}
+	   	 }
+			printf("%c %d\n",a[i],c);
+	   }
+    }
+}
