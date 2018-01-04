@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main(void)
+{
+	int a[5],i,n,odd=0,even=0,b,c;
+	printf("ENTER THE SIZE=");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("value=");
+		scanf("%d",&a[i]);
+	}
+		for(i=0;i<n;i++)
+		{
+			if(a[i]%2==0)
+			{
+				b=a[i];
+				even++;
+			}
+			else
+			{
+				c=a[i];
+				odd++;
+			}
+		}
+		if(odd<even)
+		{
+			printf("odd=%d",c);
+		}
+		else
+		{
+			printf("even=%d",b);
+		}
+}
